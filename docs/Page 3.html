@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Actividad 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+   <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
+    <link rel="stylesheet" href="css/myway.css">
+  </head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>ARTS & MAGAZINE</b></h1>
+    <h6>Donde el arte encuentra a la<span class="w3-tag">MODA</span></h6>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Page 2.html">Tendencia: Arte y Moda</a></li>
+            <li><a href="Page 3.html">Historia: Arte y Moda</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/Egipcia.jpg" alt="Egipcia" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">La Antigüedad</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>El Reflejo de la Estética Artística</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('Suscríbete').style.display='block'">CONOCE MÁS</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PRINCIPALES CIVILIZACIONES</h3>
+          <h5>Egipto, Grecia y Roma, <span class="w3-opacity">Armonía, Proporción y Simetría</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/grecia.jpg" alt="grecia" style="width:100%" class="w3-padding-16">
+          <p><strong>Inspiración:</strong> Las túnicas y tocados egipcios, griegos o romanos, adornados con oro y piedras preciosas, eran un reflejo de la conexión entre lo divino y lo terrenal, influenciados por las representaciones artísticas de los faraones y deidades.</p>
+          <p>En estas culturas, la moda era un reflejo de las esculturas y el arte que priorizaban el idealismo del cuerpo humano y la simplicidad de las formas. Las túnicas drapeadas se alineaban con las nociones de belleza y perfección.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Respuestas  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jorge <span class="w3-opacity w3-medium">Mayo 3, 2024, 6:32 PM</span></h4>
+                <p>¡Me fascina este arte!</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>RENACIMIENTO</h3>
+          <h5>Influencia del Arte en el Lujo y el Vestido, <span class="w3-opacity">Siglo XV y XVI</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/renacimiento.jpg" alt="renacimiento" style="width:100%" class="w3-padding-16">
+          <p><strong>El arte</strong> experimentó un renacer, influido por el humanismo, la ciencia y la innovación. Este periodo también trajo consigo una mayor sofisticación en la moda, que reflejaba el espíritu de la época. Los retratos renacentistas son una clara demostración de cómo la moda y el arte se fusionaron para proyectar poder, riqueza y conocimiento.</p>
+          <p>Los nobles y reyes, como los Medici y Enrique VIII, encargaban obras de arte en las que las prendas se convertían en protagonistas. Los vestidos, llenos de detalles elaborados, encajes y sedas, eran una muestra de estatus y seguían las tendencias artísticas de la época.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Respuestas  </b> <span class="w3-tag w3-white">4</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">Abril 26, 2024, 10:52 PM</span></h4>
+                <p>¡Amo este contenido, sube más seguido!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">Abril 23, 2024, 9:12 PM</span></h4>
+                <p>Sueño con estar ahí algún día.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ROMANTICISMO Y BELLE ÉPOQUE</h3>
+          <h5>El rococó, <span class="w3-opacity">Siglo XVIII</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/fragonard-1.jpg" alt="fragonard-1" style="width:100%" class="w3-padding-16">
+          <p><strong>Esta moda fue</strong> un estilo artístico caracterizado por la extravagancia y la ornamentación excesiva. Esta opulencia también se vio reflejada en la moda de la corte francesa, donde María Antonieta fue una figura central que elevó la moda a un arte, con diseños exagerados, vestidos voluminosos, pelucas altas y accesorios ostentosos.</p>
+          <p>Los vestidos de la corte rococó eran casi escultóricos, con formas amplias y detalles en brocados, cintas y encajes que reflejaban los elementos decorativos de las pinturas rococó.</p>
+          <p>La Belle Époque, a finales del siglo XIX y principios del XX, fue una época dorada para la moda y el arte. El estilo Art Nouveau, con sus formas orgánicas y fluidas, influyó en el diseño de vestidos que imitaban las curvas y movimientos de las obras de arte de la época, como las joyas de René Lalique o los estampados de Alfons Mucha.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Respuestas  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_mountain.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Melissa <span class="w3-opacity w3-medium">Abril 10, 2024, 7:22 PM</span></h4>
+                <p>Ojalá hubiera vivido en esa época.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/boy.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">Abril 11, 2024, 10:32 PM</span></h4>
+                <p>Publiquen más información de esto, por favor.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_hood.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">Abril 12, 2024, 9:12 PM</span></h4>
+                <p>¡Excelente información!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/museo-moda-historia.jpg" alt="museo-moda-historia" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>HISTORIA, ARTE Y MODA</h4>
+          <p>La moda ya era influenciada por las formas y los conceptos artísticos predominantes. Los trajes y joyas no solo reflejaban el estatus social y el poder, sino que también seguían los principios estéticos de armonía, proporción y simetría, conceptos clave en el arte de la época.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Publicaciones Populares</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <a href="https://www.youtube.com/embed/4Zltrv9SHF8?si=o-t6Bb3D3UuJKf7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="img/taylor-swift-reivindica-el-tartan-y-la-moda-punk-en-los-mtv-vmas-2024-1871984.jpg" alt="taylor-swift-reivindica-el-tartan-y-la-moda-punk-en-los-mtv-vmas-2024-1871984" class="w3-left w3-margin-right" style="width: 70px">
+            </a>
+            <span class="w3-large">¡TAYLOR SWIFT EN LOS VMAS!</span>
+            <br>
+            <span>Deslumbra en la red carpet.</span>
+          </li>
+          <li class="w3-padding-16">
+            <a href="https://www.eluniversal.com.mx/de-ultima/los-mejores-looks-en-la-alfombra-roja-de-los-premios-emmy-2024/">
+            <img src="img/Emmy-Awards-2024-style-featured.jpg" alt="Emmy-Awards-2024-style-featured" class="w3-left w3-margin-right" style="width: 70px">
+            </a>
+            <span class="w3-large">EMMYS 2024</span>
+            <br>
+            <span>¿Quiénes fueron los mejores vestidos?</span>
+          </li>
+          <li class="w3-padding-16">
+            <a href="https://www.hola.com/actualidad/20240905716575/los-dardos-entre-naomi-campbell-y-anna-wintour-que-han-provocado-enfrentamiento-en-publico-en-nueva-york/">
+            <img src="img/GWpPwy3XEAA1eJE.jpg" alt="GWpPwy3XEAA1eJE" class="w3-left w3-margin-right" style="width:70px">
+            </a>
+            <span class="w3-large">WINTOUR VS CAMPBELL</span>
+            <br>
+            <span>El beef del momento.</span>
+          </li>
+          <li class="w3-padding-16">
+            <a href="https://www.glamour.es/articulos/mejores-looks-emily-in-paris-temporada-4">
+            <img src="img/emily-paris-netflix-1-luhohyid-2024-08-15.jpeg" alt="emily-paris-netflix-1-luhohyid-2024-08-15" class="w3-left w3-margin-right w3-sepia" style="width:70px">
+            </a>
+            <span class="w3-large">EMILY EN PARIS ESTÁ DE VUELTA</span>
+            <br>
+            <span>Outfits, Drama y Publicidad</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Publicidad</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle"><img src="img/nota_17191688429982_239.jpg" alt="nota_17191688429982_239" style="height: 200px;"></span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Iconos del mes</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/karl-lagerfeld-1.jpg" alt="karl-lagerfeld-1" style="width:100%"></p>
+            <p><img src="img/coco chanel.jpg" alt="coco" style="width:98%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/CH-SAO-PAULO-scaled-e1664542851957.jpg" alt="CH-SAO-PAULO-scaled-e1664542851957" style="width:97%" class="w3-grayscale"></p>
+            <p><img src="img/vivienne.jpg" alt="vivienne" style="width:97%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Síguenos en</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Suscríbete</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Regístrate con tu correo y no te pierdas de las últimas novedades.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Ve hacia arriba</a>
+ <p class="w3-small">Todos los derechos reservados por Arts & Magazine</p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-white w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Comienza ahora</a>
+ <!-- End footer. -->
+ </footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

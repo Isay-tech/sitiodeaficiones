@@ -1,0 +1,25 @@
+nav {
+    background: gray;
+    padding: 10px;
+    color: white
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    color:bisque;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: whitesmoke;
+}
+footer {
+    text-align: center;
+}
